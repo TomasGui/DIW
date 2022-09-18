@@ -1,0 +1,395 @@
+/* Selector Univarsal */
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+/* Body con el formato general con igual formato para todos los textos */
+body {
+    font-family: 'Gideon Roman', cursive;
+    align-content: center;
+    margin: 0 auto ;   
+}
+
+/* HEADER - Cabezal + Logo */
+header#cabezalUno {
+    height: 200px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+    border-top: 10px solid #C40018;
+    border-bottom: 10px solid #C40018;
+    background-color: rgb(255, 238, 0);
+}
+
+img.logo {
+    height: 200px;
+}
+
+/*  Regal general para H1 */
+h1 {
+    color: #292725 ;
+    text-align: center;
+    justify-content: center;
+    height: 65px;
+    margin-top: 73px;
+    font-size: 55px;
+    letter-spacing: 0.1em;
+    text-shadow: 3px 3px 3px  white ;
+}
+/*  Regal general para H2 */
+h2 {
+    color:yellow;
+    text-shadow: 3px 3px 3px #292725 ;
+    font-size: 40px;
+    letter-spacing: 2px ;
+    text-align: center;
+}
+
+/*  Regal general para H3 y Caption */
+h3 , caption {
+    font-size: 28px;
+    margin: 0 5px;
+    color: #1c5ab8;
+    text-align: center;
+}
+
+/* Regla general para p */
+p {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    color: black;
+    font-size: 20px;
+}
+
+/* Menu principal*/
+nav#menu {
+    padding: 5px; 
+}
+
+nav#menu ul {
+    width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    list-style-type: none;
+    list-style-image: none;
+    justify-content: center;
+    display: flex;
+}
+
+nav#menu ul li a {
+    display: block;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    color:#292725 ;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav#menu ul li a:hover {
+    background-color:#C40018;
+    color: white;
+}
+
+/* DIV Auxiliar para contener la imagen de fondo y texto*/
+div.cabezalDos {
+    background-color: rgb(24, 24, 228);
+    background: url(img/fondo.jpg) fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 10px;
+    justify-content: center;
+    border-top: 10px solid #C40018;
+    border-bottom: 10px solid #C40018;
+}
+
+div.cabezalDos p {
+    color:white;
+    margin: 25px auto;
+    text-align: justify;
+    font-size: 35px;
+    text-shadow: 3px 3px 3px #292725 ;
+    width: 600px;
+}
+
+div.cabezalDos h2 {
+    margin:20px 0 ;
+}
+
+/*Regla general para todos los titulos h2 dentro cada una de las secion*/
+section#seccionUno h2 , section#seccionDos h2 ,section#seccionTres h2 {
+    color:#ffc507;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    border-bottom: #C40018 5px solid;
+    border-right:#C40018 5px solid; ;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* seccion uno - Lugares destacados*/
+section#seccionUno {
+    display: flex;
+    align-items: stretch;   
+    flex-wrap: wrap;
+    gap:10px;
+    width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+    
+}
+
+section#seccionUno article{
+    width: calc(25% - 30px);
+    padding: 10px;   
+}
+
+section#seccionUno article figure{
+    width: 100%;
+}
+
+section#seccionUno article figure img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/*Seccion dos - Galeria de imagenes*/
+section#seccionDos {
+    width: 1200px;
+    margin: auto;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.galeria figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.galeria figure:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1/ span 2;
+}
+
+.galeria figure:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3 / 2 span;
+}
+
+/*Seccion Tres - Recomendaciones*/
+section#seccionTres {
+    display: flex;
+    align-items: stretch;   
+    flex-wrap: wrap;
+    gap:10px;
+    width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+section#seccionTres article {
+    width: calc(50% - 30px);
+    padding: 10px;
+    display: flex;   
+}
+
+section#seccionTres div {
+    width: 50%;
+    padding: 5px 0;
+    margin: 5px;
+    height: auto;
+}
+
+section#seccionTres img {
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;   
+}
+
+section#seccionTres p {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+section#seccionTres ul {
+    list-style-position: inside;
+    margin: 13px 0 ; 
+}
+
+a.botonAmpliar {
+    height: 25px;
+    line-height: 25px;
+    width: 55px;
+    padding: 5px;
+    margin: 20px 0;
+    background-color:#C40018 ;
+    text-decoration: none;
+    color: white;
+}
+
+a.botonAmpliar:hover {
+    text-decoration: none;
+    color: black;
+    background-color:#ffc5079d ;
+}
+
+table{
+    display: inline-table;
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+table caption {
+    text-align: left;
+    margin-top: 10px;
+}
+
+table tr {
+    height: 30px;
+}
+
+tr th {
+    border-bottom: 3px solid #C40018 ;
+    background-color: white;
+    font-size: 20px;
+}
+
+td {
+    text-align: center;
+    padding: 0;
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(127, 181, 214);
+}
+
+tr:nth-child(2n+1) {
+    background-color: #ffc5079d ;
+}
+
+/* Seccion cuatro - FORMULARIO */
+section#SeccionCuatro {
+    background-color: rgb(255, 238, 0);
+    
+}
+
+#formulario h2 {
+    margin: 20px auto;
+    color: #292725 ;
+    text-shadow: 3px 3px 3px white ;
+}
+
+#formulario p {
+    color: white ; 
+    background-color: rgb(255, 123, 0) ;
+    text-align: center;
+    padding: 5px;
+    font-size: 23px;
+
+}
+
+form#formulario {
+    display:flex ;
+    flex-direction: row;
+    flex-flow:wrap;
+    justify-content: stretch;
+    gap:20px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
+    font-size: 19px;
+}
+
+#formulario fieldset {
+    display: inline-block;
+    width: 100%;
+    margin: 2px 0;
+    border: 0 ; 
+
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+#formulario fieldset:nth-of-type(2) , #formulario fieldset:nth-of-type(5) {
+    width: 66%;
+
+}
+
+#formulario fieldset:nth-of-type(3){
+    width: 28%;
+    
+}
+
+select , input[type="number"] , input[type="text"] {
+    width: 99%;
+    height: 35px;
+    margin: 0;
+    text-align: center;
+}
+
+textarea{
+    width: calc(98% - 6px);
+    height: 200px;
+    margin: 15px auto;
+    padding: 3px;
+    border: 1px solid gray;
+    resize: none;
+} 
+
+input[type="radio"]+label {
+    display: inline-block;
+}
+ 
+input[type="submit"]{
+     width: 28%;
+     height: 50px;
+     background-color: #C40018;
+     font-size: 20px;
+     font-family:'Gideon Roman', cursive;
+     color: white;
+     border:none;
+     margin: 15px 0;
+ }
+
+ input[type="submit"]:hover{
+    background-color: rgb(255, 191, 71);
+    color: black;
+}
+
+/*Pie de pagian*/
+ footer {
+     height: 150px;
+     background-color: #C40018;
+     display: flex;
+     align-content: center;
+ }
+
+ .piePagina a img {
+     height: 75px;
+     margin: auto;
+ }
+
+ .piePagina div {
+     margin: auto;
+ }
